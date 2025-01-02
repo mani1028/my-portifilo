@@ -1,6 +1,7 @@
-# Portfolio - [MANIKANTA]-
+# Portfolio - CHELAMALLA MANIKANTA
 
 Welcome to my portfolio! This repository showcases my projects, certificates, and other professional achievements.
+> View my portfolio: [portfolio](#portfolio)
 
 ---
 
