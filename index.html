@@ -324,7 +324,39 @@ I am Passionate Data Analyst with expertise in transforming complex data into ac
                 description: 'Quantium Data Analytics Job Simulation - Forage Completed a simulation focused on data preparation, customer analytics, and commercial insights. Analyzed transaction datasets to identify trends, conducted uplift testing for trial store layouts, and delivered data-driven recommendations through comprehensive reports to support strategic decision-making..'
             },
             {
-                image: 'certificates/Python completion cert.jpg',
+                image: 'certificates/Data Analysis and Visualization Foundations - Coursera ibm.jpg',
+                description: 'Certificate in Data Analysis and Visualization Foundations from Coursera (IBM)'
+            },
+            {
+                image: 'certificates/excel skils goldman sachs_page-0001.jpg',
+                description: ''
+            },
+            {
+                image: 'certificates/project management forage accenture_page-0001.jpg',
+                description: ''
+            },
+            {
+                image: './certificates/certificate-1.jpeg',
+                description: 'Certificate in HTML from Sololearn.'
+            },
+            {
+                image: 'certificates/ms excel simple learn.jpg',
+                description: 'Certificate in Ms Excel from SimpleLearn'
+            },
+            {
+                image: 'certificates/Code soft web development certify.jpg',
+                description: ''
+            },
+            {
+                image: 'certificates/power query in excel simplelearn_page-0001.jpg',
+                description: 'Certificate in Power Query in Excel from SimpleLearn'
+            },
+            {
+                image: 'certificates/Coding raja Certify web dev.jpg',
+                description: 'Coding Raja 1-Month Web Developement Internship Certificate Completed a 1-month Web Development internship with Coding Raja, gaining practical experience in frontend programming,and working on real-world projects to enhance coding skills.'
+            },
+            {
+                image: 'certificates/WhatsApp Image 2024-12-16 at 8.02.26 PM.jpeg',
                 description: 'Coding Raja 1-Month Python Internship Certificate Completed a 1-month Python internship with Coding Raja, gaining practical experience in Python programming, problem-solving, and working on real-world projects to enhance coding skills.'
             },
             {
@@ -338,6 +370,47 @@ I am Passionate Data Analyst with expertise in transforming complex data into ac
             {
                 image: './certificates/AWS Course Completion.jpg',
                 description: 'AWS Course Completion Completed an AWS course, gaining expertise in cloud computing, AWS services, and best practices for deploying and managing applications on the AWS platform.'
+            },
+            {
+                image: 'certificates/ibm intro to da.jpg',
+                description: 'Certificate in Intro to Data Analysis from IBM.'
+            },
+            {
+                image: 'certificates/ibm git.jpg',
+                description: 'Certificate in GIT from IBM.'
+            },
+            {
+                image: 'certificates/ibm excel for da.jpg',
+                description: 'Certificate in Excel for Data Analysis from IBM.'
+            },
+            {
+                image: 'certificates/ibm khan acasemy.jpg',
+                description: 'Certificate in Algorithms from IBM.'
+            },
+            {
+                image: 'certificates/powerbi miscrosoft.jpg',
+                description: ''
+            },
+            
+            {
+                image: 'certificates/Cn expo certify.jpg',
+                description: ''
+            },
+            {
+                image: 'certificates/ibm da with python.jpg',
+                description: 'Certificate in  Data Analysis with python from IBM'
+            },
+            {
+                image: 'certificates/Python completion cert.jpg',
+                description: ''
+            },
+            {
+                image: 'certificates/python intro miscrosoft_page-0001.jpg',
+                description: ''
+            },
+            {
+                image: 'certificates/Udemy Python course certify.jpg',
+                description: 'Certificate in Python crash course from Udemy.'
             },
 
         ];
@@ -366,16 +439,25 @@ I am Passionate Data Analyst with expertise in transforming complex data into ac
         }
 
         function viewCertificate() {
-            const currentImage = certificates[currentIndex].image;
-            window.open(currentImage, '_blank'); // Opens the certificate image in a new tab
+            const certificateImage = document.getElementById('certificate-image');
+            const displayedSrc = certificateImage.src.split('/').pop(); // Extract the filename from the src
+
+            // Find the matching certificate from the certificates array by comparing filenames
+            const currentCertificate = certificates.find(cert => cert.image.split('/').pop() === displayedSrc);
+
+            if (currentCertificate && currentCertificate.image) {
+                window.open(currentCertificate.image, '_blank'); // Opens the displayed certificate
+            } else {
+                alert('Certificate not available.');
+            }
         }
 
         // Initial display
         updateCertificate();
 
-        // Change certificate every 5 seconds
-        setInterval(updateCertificate, 5000);
- </script>
+        // Change certificate every 4 seconds
+        setInterval(updateCertificate, 4000);
+    </script>
 </section>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
@@ -392,15 +474,15 @@ I am Passionate Data Analyst with expertise in transforming complex data into ac
             </div>
             <h2 class="experience-sub-title project-title">PRECISED FOOD</h2>
             <div class="btn-container">
-              <!--<button
+              <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://mani1028.github.io/precidefood/'"
               >
                 Github
-              </button>-->
+              </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://mani1028.github.io/precidefood/'"
+                onclick="location.href='https://precidefood.vercel.app/'"
               >
                 Live Demo
               </button>
@@ -442,13 +524,13 @@ I am Passionate Data Analyst with expertise in transforming complex data into ac
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/mani1028/DOB-decode'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://dob-nine.vercel.app/'"
               >
                 Live Demo
               </button>
